@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <form action="/add" method="post">
+            <input type="text" name="name">
+            <input type="submit">
+        </form>
+        <table>
+            <tr>
+                <th>server</th>
+            
+            </tr>
+            <% for(var dat of data){ %>
+                <tr>
+                    <td>
+                        <%= dat %>
+                        <a href="/<%= dat %>">Join</a>
+                        
+                    </td>
+                </tr>
+                <% }; %>
+        </table>
+    </body>
+</html>
